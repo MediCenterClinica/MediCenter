@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra Sandra</title>
+    <link rel="icon" href="logo clinica.jpg" type="image/png" />
+    <style>
+        :root {
+            --verde: #2e7d32;
+            --branco: #ffffff;
+            --preto: #111111;
+            --cinza: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: var(--branco);
+            color: var(--preto);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: var(--preto);
+            color: var(--branco);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .logo span {
+            color: var(--verde);
+        }
+
+        .btn-exames {
+            background: var(--verde);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-exames:hover {
+            background: #1b5e20;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .profile-pic {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-pic img {
+            width: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            flex: 2;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--preto);
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            color: var(--preto);
+        }
+
+        .content h2 {
+            color: var(--verde);
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--verde);
+            padding-bottom: 0.3rem;
+            text-align: left;
+        }
+
+        .content ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--verde);
+        }
+
+        .contact-info p, .contact-info a {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--preto);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-agendar {
+            display: inline-block;
+            background: var(--verde);
+            color: var(--branco);
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn-agendar:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--preto);
+            color: var(--branco);
+            border-top: 1px solid var(--verde);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-pic img {
+                width: 200px;
+            }
+
+            .content h1 {
+                font-size: 1.6rem;
+            }
+
+            .content h2 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Medi<span>Center</span></h1>
+            <a href="index.html" class="btn-exames">Voltar</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-pic">
+            <img src="dra.jpg" alt="Dra Sandra">
+        </div>
+        <div class="content">
+            <h1>Dra. Sandra Regina Reis Almeida Passos</h1>
+            <p><strong>Nutricionista</strong></p>
+            <p>Escolhi a Nutrição porque acredito no poder transformador que a alimentação adequada tem na vida das pessoas. Atendo cada paciente de forma única, considerando sua rotina, suas necessidades e seus objetivos. Meu propósito é ajudar você a conquistar mais saúde, bem estar e qualidade de vida de forma leve e realista, sem dietas restritivas ou modismo. Meu trabalho é voltado para: Reeducação Alimentar, Emagrecimento, Prevenção e tratamento de doenças, Melhora da relação com a comida, Orientação nutricional prática para o dia a dia. Atendo de maneira presencial, sempre com acolhimento, profissionalismo e dedicação.</p>
+
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Graduação em Nutrição pela Unincor - Centro Universitário Vale do Rio Verde</li>             
+            </ul>
+
+            <div class="contact-info">
+                <h1>Agende sua Consulta</h1>
+                <p>Entre em contato para marcar um horário:</p>
+                <p>Telefone: <a href="tel:+551238839715">(12) 3883-9715</a></p>
+                <p>E-mail: <a href="mailto:cardiocenter254@hotmail.com">cardiocenter254@hotmail.com</a></p>
+                <p>Endereço: Av. Dr. Carlos de Almeida Rodrigues, 495 - Indaiá, Caraguatatuba - SP, 11665-220</p>
+                <p>Horário de Atendimento: Seg-Sex, 08:00-18:00</p>
+                <a href="https://wa.me/551238839715" class="btn-agendar">Agendar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
